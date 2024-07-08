@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de partidas Rankeadas</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main>
+        <h1>Calculadora de partidas Rankeadas</h1>
+        <form>
+            <label for="vitorias">Quantidade de vitórias: </label>
+            <input type="number" id="vitorias" onkeypress="return filtrarTeclas(event)" />
+            
+            <label for="derrotas">Quantidade de derrotas: </label>
+            <input type="number" id="derrotas" onkeypress="return filtrarTeclas(event)" />
+
+            <button type="button" onclick="executar()">Calcular Partida</button>
+        </form>
+        <span id="resultado"></span>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
